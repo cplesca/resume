@@ -96,17 +96,15 @@
                 <h2>Caissière/ Service à la clientèle chez Marché Épicure (Montréal)</h2><br/>
                 <p>   
                     <ul>
-                            <li>Accueillir et aider le client du marché;</li>
-                            <li>Assurer l’image de marque de l’entreprise;</li>
-                            <li>Maitriser des logiciels des caisses;</li>
-                            <li>Tenir le journal des caisses et identifier les écarts;</li>
-                            <li>Gérer des réclamations et les retours;</li>
+                        <li v-for="(item,index) in list3">
+                        index{{index}}: {{item}}
+                        </li>
                         </ul><br/>
                     </p> 
                 <h2>Technicienne comptable chez Technofasad (Moldavie</h2><br/>
                 <p>
                     <ul>
-                        <li v-for="(item,index) in list">
+                        <li v-for="(item,index) in list4">
                         index{{index}}: {{item}}
                         </li>
                     </ul>
@@ -118,7 +116,9 @@
 var app = new Vue({
     el:'#vue',
     data:{
-        list:['Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;']
+        list4:['Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;']
+        list3:['Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;' ]
+
     }
 
 })
