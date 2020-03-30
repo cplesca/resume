@@ -94,15 +94,21 @@
             </div>
             <div class="sec-droite">
                 <h2>Caissière/ Service à la clientèle chez Marché Épicure (Montréal)</h2><br/>
-                <p>   
+               <p>   
                     <ul>
-                        <li v-for="item in list3">{{item}}</li>
-                    </ul><br/>
+                            <li>Accueillir et aider le client du marché;</li>
+                            <li>Assurer l’image de marque de l’entreprise;</li>
+                            <li>Maitriser des logiciels des caisses;</li>
+                            <li>Tenir le journal des caisses et identifier les écarts;</li>
+                            <li>Gérer des réclamations et les retours;</li>
+                        </ul><br/>
                     </p> 
                 <h2>Technicienne comptable chez Technofasad (Moldavie</h2><br/>
                 <p>
                     <ul>
-                        <li v-for="item in list4">{{list4}} </li>
+                        <li v-for="(item,index) in list">
+                        index{{index}}: {{item}}
+                        </li>
                     </ul>
                 </p>
             </div>
@@ -112,7 +118,7 @@
 var app = new Vue({
     el:'#vue',
     data:{
-       list3:['Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'],
+       list:['Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'],
         }
 
 })
