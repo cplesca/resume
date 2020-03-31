@@ -106,7 +106,7 @@
                 <h2>Technicienne comptable chez Technofasad (Moldavie</h2><br/>
                 <p>
                     <ul>
-                        <li v-for="item in lists">{{item.list[1]}}
+                        <li v-for="item in lists">{{item.list}}
                          </li>
                     </ul>
                 </p>
@@ -117,11 +117,8 @@
 var app = new Vue({
     el:'#vue',
     data:{
-        lists:[
-            {list:'Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'},
-            {list:'Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'},
-            {list:'Intégrer des éléments de design graphique et de contenu aux pages Web;', 'Adopter les meilleures pratiques « SEO » pour la structure et le contenu du site Web dans l'environnement Joomla;', 'Participer à des projets internes de l’entreprise', 'Développer du code HTML et CSS; Créer du nouveau code, documenter, tester et implémenter dans un environnement de production.', 'Répondre aux demandes des clients et résoudre des bogues.', 'Contribuer activement à la réalisation de nouveaux projets. Gérer les tâches et la charge de travail de manière efficace et indépendante.'}
-    ]
+        lists:[list:'Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'],
+            
     }
 
 })
