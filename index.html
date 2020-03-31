@@ -96,17 +96,14 @@
                 <h2>Caissière/ Service à la clientèle chez Marché Épicure (Montréal)</h2><br/>
                <p>   
                     <ul>
-                            <li>Accueillir et aider le client du marché;</li>
-                            <li>Assurer l’image de marque de l’entreprise;</li>
-                            <li>Maitriser des logiciels des caisses;</li>
-                            <li>Tenir le journal des caisses et identifier les écarts;</li>
-                            <li>Gérer des réclamations et les retours;</li>
+                         <li v-for="item in list4">{{item}}
+                         </li> 
                         </ul><br/>
                     </p> 
                 <h2>Technicienne comptable chez Technofasad (Moldavie</h2><br/>
                 <p>
                     <ul>
-                        <li v-for="item in lists">{{item.list}}
+                        <li v-for="item in list">{{item}}
                          </li>
                     </ul>
                 </p>
@@ -117,12 +114,15 @@
 var app = new Vue({
     el:'#vue',
     data:{
-        lists: [
-         {list:'Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;'},
-         {list:'Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;' },
-         {list:'Intégrer des éléments de design graphique et de contenu aux pages Web;', 'Adopter les meilleures pratiques « SEO » pour la structure et le contenu du site Web dans l"environnement Joomla;', 'Participer à des projets internes de l’entreprise', 'Développer du code HTML et CSS; Créer du nouveau code, documenter, tester et implémenter dans un environnement de production.', 'Répondre aux demandes des clients et résoudre des bogues.', 'Contribuer activement à la réalisation de nouveaux projets. Gérer les tâches et la charge de travail de manière efficace et indépendante.'}
-      
-     ]
+         list4:['Accueillir et aider le client du marché;', 'Assurer l’image de marque de l’entreprise;', 'Maitriser des logiciels des caisses;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;']
+    }
+})
+</script>
+<script type="text/javascript">
+var app = new Vue({
+    el:'#vue',
+    data:{
+        list:['Exécuter toutes les activités financières;','Assurer les états financiers et les rapports de gestion;', 'Préparer les déclarations de revenus, les registres et les systèmes financiers;', 'Analyser les états financiers mensuels et annuels;', 'Créer et gérer les bases de données informatisées;', 'Tenir le journal des caisses et identifier les écarts;', 'Gérer des réclamations et les retours;']
     }
 })
 </script>
